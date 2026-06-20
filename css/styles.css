@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "about"
+        "gallery"
+        "footer";
+    gap: 12px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #e6f0ff;
+    border: 2px dashed #7aa7d9;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-logo {
+    color: blue;
+    font-size: 25px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    grid-area: hero;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #dff0df;
+    border: 2px dashed #6fb57d;
+}
+
+.about {
+    grid-area: about;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0dceb;
+    border: 2px dashed #c07aa8;
+}
+
+.gallery {
+    grid-area: gallery;
+    padding: 15px;
+    background-color: #e6f4ff;
+    border: 2px dashed #4ea5d8;
+}
+
+.gallery-title {
+    margin-bottom: 15px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.gallery-box {
+    background: white;
+    padding: 10px;
+    border: 2px dashed #7ab8db;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-box:first-child {
+    grid-column: span 2;
+}
+
+.gallery-img {
+    height: 130px;
+    background-color: #b7daf0;
+    font-weight: bold;
+    color: #1e5d84;
+}
+
+.gallery-button {
+    padding:10px;
+    border:none;
+    background:#0a8dd8;
+    color:white;
+    cursor:pointer;
+}
+
+footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    background-color: #e5e5e5;
+    border: 2px dashed #999;
+
+}
